@@ -7,6 +7,10 @@ const propSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "User",
   },
+  file: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "File",
+  }
 });
 
 const Prop = mongoose.model("Prop", propSchema);

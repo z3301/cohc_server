@@ -45,6 +45,8 @@ const createProp = async (req, res) => {
 
   // respond with the new prop
   res.json({ prop });
+
+  // catch errors
   } catch (error) {
     console.log(error);
     res.status(500).json({ error: "Something went wrong" });
