@@ -36,4 +36,4 @@ app.delete("/props/:id", requireAuth, propsController.deleteProp);
 
 // Start our server
 app.listen(process.env.PORT || 3009); 
-console.log(`Server listening on port ${process.env.PORT}`);
+console.log(`Server listening on port ${process.env.PORT}`); 
